@@ -25,11 +25,12 @@ try:
 
     # Print a success message
     print("Database 'alx_book_store' created successfully!")
-
-    # Close the cursor and connection
-    cursor.close()
-    db.close()
+ 
 
 except mysql.connector.Error as err:
     # Print an error message
     print("Error connecting to the database", err)
+
+# Close the cursor and connection
+    cursor.close()
+    db.close()
